@@ -4,36 +4,139 @@
     <body background = "https://s3.amazonaws.com/roostery-composites/compost/5360080/fabric-preview-fq_0_m.jpg"></body>
     <img id = "plate" src="https://media.istockphoto.com/photos/white-empty-plate-clipping-path-included-picture-id866306066?k=6&m=866306066&s=612x612&w=0&h=iYM0nKMvSAwAzUPXcdOxF39Vh9u04AlBspUj3jvQg2g=">
     <script>
+        var total_cals = 0;
+        var recommended = 2000;
     function e_and_b()
     {
         document.getElementById("plate").src = "http://www.kroger.com/asset/59404687bae8a25175396946?data=1";
         document.getElementById("cal").innerHTML = "Calories: 400 calories for 3 eggs and 4 slices of bacon.";
+        total_cals = total_cals + 400;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
     }
     function pasta()
     {
         document.getElementById("plate").src = "https://static01.nyt.com/images/2009/10/12/health/12recipehealth_600/12recipehealth_600-articleLarge.jpg";
-        document.getElementById("cal").innerHTML = "Calories: 200 calories for meatless penne pasta"
+        document.getElementById("cal").innerHTML = "Calories: 200 calories for meatless penne pasta";
+        total_cals = total_cals + 200;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
     }
     function salad()
     {
         document.getElementById("plate").src = "http://www.newhealthadvisor.com/images/1HT00523/caesar%20salad.jpg";
-        document.getElementById("cal").innerHTML = "Calories: 100 calories for a ceasar salad and dressing"
+        document.getElementById("cal").innerHTML = "Calories: 100 calories for a ceasar salad and dressing";
+        total_cals = total_cals + 100;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
     }
     function pork_belly()
     {
         document.getElementById("plate").src = "https://media-cdn.tripadvisor.com/media/photo-s/08/d4/e3/f4/minsok-korean-restaurant.jpg";
-        document.getElementById("cal").innerHTML = "Calories: 150 calories in a couple thin slices of porkbelly"
+        document.getElementById("cal").innerHTML = "Calories: 150 calories in a couple thin slices of porkbelly";
+        total_cals = total_cals + 150;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
     }
     function burger()
     {
         document.getElementById("plate").src = "https://www.eatthis.com/wp-content/uploads/2018/01/Carls-Jr-Mushroom-and-Swiss-All-Natural-Burger-500x352.jpg";
-        document.getElementById("cal").innerHTML = "Calories: 350 calories in a double patty hamburger"
+        document.getElementById("cal").innerHTML = "Calories: 350 calories in a double patty hamburger";
+        total_cals = total_cals + 350;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
     }
     function pho()
     {
         document.getElementById("plate").src = "https://s3-media1.fl.yelpcdn.com/bphoto/jH3yPkVk44pyhWmWK0Gchw/348s.jpg";
-        document.getElementById("cal").innerHTML = "Calories: 600 calories in a bowl of pho special"
+        document.getElementById("cal").innerHTML = "Calories: 600 calories in a bowl of pho special";
+        total_cals = total_cals + 600;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
     }
+    function steak()
+    {
+        document.getElementById("plate").src = "http://www.newhealthguide.org/images/10439404/image001.jpg";
+        document.getElementById("cal").innerHTML = "Calories: 680 calories a sirloin steak";
+        total_cals = total_cals + 680;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
+    }function ramen()
+    {
+        document.getElementById("plate").src = "https://samurainoodlehouston.com/wp-content/uploads/2016/01/samurai-kinoko-ramen-2-300x225.jpg";
+        document.getElementById("cal").innerHTML = "Calories: 460 calories in a bowl of tonkotsu ramen";
+        total_cals = total_cals + 460;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
+    }function sushi()
+    {
+        document.getElementById("plate").src = "https://s3.amazonaws.com/secretsaucefiles/photos/images/000/110/306/large/15434540555_3ecdb6d3b3_c.jpg?1485378140";
+        document.getElementById("cal").innerHTML = "Calories: 260 calories in an 8 piece california roll";
+        total_cals = total_cals + 260;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
+    }
+    function pizza()
+    {
+        document.getElementById("plate").src = "http://www.pamperedchef.com/iceberg/com/recipe/1126803-lg.jpg";
+        document.getElementById("cal").innerHTML = "Calories: 285 calories for a slice of pizza";
+        total_cals = total_cals + 285;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
+    }
+    function orange_chick()
+    {
+        document.getElementById("plate").src = "https://www.eatthis.com/wp-content/uploads/2018/07/panda-express-orange-chicken-500x366.jpg";
+        document.getElementById("cal").innerHTML = "Calories: 300 calories for orange chicken";
+        total_cals = total_cals + 300;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
+    }
+    function bulgogi()
+    {
+        document.getElementById("plate").src = "http://media-cdn.tripadvisor.com/media/photo-s/01/2a/49/af/bulgogi-sliced-beef.jpg";
+        document.getElementById("cal").innerHTML = "Calories: 490 calories for 1 serving of bulgogi beef";
+        total_cals = total_cals + 490;
+        document.getElementById("calorie").innerHTML = total_cals;
+        if(total_cals > recommended)
+        {
+            document.getElementById("over_limit").innerHTML = "Over the daily recommended caloric intake. Let's take a walk in the lovely weather!";
+        }
+    }
+    
     </script>
 
         <source src = "js/script.js"></source>
@@ -41,7 +144,7 @@
 </head>
 <h2>
     <body>
-        <button type ="eggsnb" onclick = "e_and_b()">Eggs and Sausage</button>
+        <button type ="eggsnb" onclick = "e_and_b()">Eggs and Bacon</button>
         <button type ="pastay" onclick = "pasta()">Pasta with Tomato Sauce</button>
         <button type ="salds" onclick = "salad()">Ceasar Salad</button>
     </body>
@@ -53,4 +156,25 @@
         <button type ="phonoodle" onclick = "pho()">Pho Tai Bo Vien</button>
     </body>
 </h2>
+<h2>
+    <body>
+        <button type ="steaka" onclick = "steak()">Steak</button>
+        <button type ="ramennoodle" onclick = "ramen()">Tonkostu Ramen</button>
+        <button type ="sushis" onclick = "sushi()">California Roll</button>
+    </body>
+</h2>
+
+<h2>
+    <body>
+        <button type ="pizza" onclick = "pizza()">Slice of Pizza</button>
+        <button type ="orangec" onclick = "orange_chick()">Orange chicken</button>
+        <button type ="bulgogi" onclick = "bulgogi()">Bulgogi beef</button>
+    </body>
+</h2>
+<h3>
+    <body>
+        <p id = "calorie" style = color:azure>Total Calories:</p>
+        <p><a href = "https://tiffanyjoa8.github.io/CitrusHacks2019/" class="button" id = "over_limit" style = color:white>Under recommended daily caloric intake</a></p>
+    </body>
+</h3>
 </html>
